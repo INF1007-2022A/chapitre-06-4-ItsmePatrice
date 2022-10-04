@@ -20,7 +20,15 @@ def get_greatest_values(dictionnary, num_values):
 	return []
 
 def get_sum_values_from_key(dictionnaries, key):
-	return 0
+	# 1. créer une liste de dictionnaires
+	list_of_dict = [bro1, bro2, bro3]
+	sum = 0
+	# Parcourir chaque dictionnaire et chercher la valeur d'une clé en particulier
+	for dict in list_of_dict:
+		if key in dict:
+			# prendre la valeur de clé et l'ajouter à un compteur
+			sum += dict[key]
+	return sum
 
 
 if __name__ == "__main__":
